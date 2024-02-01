@@ -39,6 +39,7 @@ public class ReportingStructureServiceImpl implements ReportingStructureService 
                 }
             }
         }
+        // ReportingStructures don't get persisted, so we can just return it
         return new ReportingStructure(employee, reportNum);
     }
 }

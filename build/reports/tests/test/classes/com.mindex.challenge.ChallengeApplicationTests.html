@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.499s</div>
+<div class="counter">1.413s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,13 +78,23 @@
 </tr>
 </thead>
 <tr>
-<td class="success">ReportingStructureTest</td>
-<td class="success">0.497s</td>
+<td class="success">compensationServiceMultipleCompensationsTest</td>
+<td class="success">1.336s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">compensationServiceTest</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">contextLoads</td>
-<td class="success">0.002s</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">reportingStructureTest</td>
+<td class="success">0.038s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,32 +102,32 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:57:08.581 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.588 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-20:57:08.596 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-20:57:08.623 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mindex.challenge.ChallengeApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-20:57:08.638 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.ChallengeApplicationTests], using SpringBootContextLoader
-20:57:08.642 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mindex.challenge.ChallengeApplicationTests]: class path resource [com/mindex/challenge/ChallengeApplicationTests-context.xml] does not exist
-20:57:08.643 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mindex.challenge.ChallengeApplicationTests]: class path resource [com/mindex/challenge/ChallengeApplicationTestsContext.groovy] does not exist
-20:57:08.643 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mindex.challenge.ChallengeApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-20:57:08.644 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindex.challenge.ChallengeApplicationTests]: ChallengeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:57:08.681 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.745 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\noahm\OneDrive\Desktop\Programming\mindex-java-code-challenge\build\classes\java\main\com\mindex\challenge\ChallengeApplication.class]
-20:57:08.747 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.ChallengeApplicationTests
-20:57:08.823 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mindex.challenge.ChallengeApplicationTests]: using defaults.
-20:57:08.824 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-20:57:08.837 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41d03fc2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@162a0a8f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@185792bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@657514dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@259b099e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@63a301d0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4745bd6a, org.springframework.test.context.event.EventPublishingTestExecutionListener@adb9aa3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77f1b59f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@c278730, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66e3d533, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@303b45ce, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4a1c531b]
-20:57:08.841 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.841 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.844 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.844 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.844 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.844 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.847 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@43454384 testClass = ChallengeApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1816d204 testClass = ChallengeApplicationTests, locations = '{}', classes = '{class com.mindex.challenge.ChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5eaf9b89, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@75c176df, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4f0c6b02, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@76b5de9b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-20:57:08.849 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.849 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
-20:57:08.853 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@43454384 testClass = ChallengeApplicationTests, testInstance = com.mindex.challenge.ChallengeApplicationTests@64db4227, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1816d204 testClass = ChallengeApplicationTests, locations = '{}', classes = '{class com.mindex.challenge.ChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5eaf9b89, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@75c176df, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4f0c6b02, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@76b5de9b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-20:57:08.869 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>21:34:22.271 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.285 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:34:22.302 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:34:22.366 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mindex.challenge.ChallengeApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:34:22.400 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.ChallengeApplicationTests], using SpringBootContextLoader
+21:34:22.409 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mindex.challenge.ChallengeApplicationTests]: class path resource [com/mindex/challenge/ChallengeApplicationTests-context.xml] does not exist
+21:34:22.410 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mindex.challenge.ChallengeApplicationTests]: class path resource [com/mindex/challenge/ChallengeApplicationTestsContext.groovy] does not exist
+21:34:22.411 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mindex.challenge.ChallengeApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:34:22.412 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mindex.challenge.ChallengeApplicationTests]: ChallengeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:34:22.495 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.641 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\noahm\OneDrive\Desktop\Programming\mindex-java-code-challenge\build\classes\java\main\com\mindex\challenge\ChallengeApplication.class]
+21:34:22.645 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.ChallengeApplicationTests
+21:34:22.846 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mindex.challenge.ChallengeApplicationTests]: using defaults.
+21:34:22.847 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+21:34:22.882 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@185792bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@657514dd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@259b099e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@63a301d0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4745bd6a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@adb9aa3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@77f1b59f, org.springframework.test.context.event.EventPublishingTestExecutionListener@c278730, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66e3d533, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@303b45ce, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4a1c531b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7ab2436f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2005b47]
+21:34:22.889 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.891 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.896 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.897 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.898 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.898 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.906 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@75969c99 testClass = ChallengeApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64d12e05 testClass = ChallengeApplicationTests, locations = '{}', classes = '{class com.mindex.challenge.ChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@469bb143, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3b833606, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7eb3a718, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@711c3966], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+21:34:22.910 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.910 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mindex.challenge.ChallengeApplicationTests]
+21:34:22.919 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@75969c99 testClass = ChallengeApplicationTests, testInstance = com.mindex.challenge.ChallengeApplicationTests@7b83326a, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64d12e05 testClass = ChallengeApplicationTests, locations = '{}', classes = '{class com.mindex.challenge.ChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@469bb143, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3b833606, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7eb3a718, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@711c3966], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+21:34:22.962 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -127,46 +137,82 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2024-01-26 20:57:09.088  INFO 8468 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Starting ChallengeApplicationTests on Anodyne with PID 8468 (started by noahm in C:\Users\noahm\OneDrive\Desktop\Programming\mindex-java-code-challenge)
-2024-01-26 20:57:09.089 DEBUG 8468 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
-2024-01-26 20:57:09.089  INFO 8468 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : No active profile set, falling back to default profiles: default
-2024-01-26 20:57:09.418  INFO 8468 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2024-01-26 20:57:09.460  INFO 8468 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 2 repository interfaces.
-2024-01-26 20:57:09.998  INFO 8468 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2024-01-26 20:57:10.007  INFO 8468 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-26 20:57:10.007  INFO 8468 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2024-01-26 20:57:10.104  INFO 8468 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-26 20:57:10.104  INFO 8468 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 996 ms
-2024-01-26 20:57:10.644  INFO 8468 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 56627, ssl: false)
-2024-01-26 20:57:10.704  INFO 8468 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:56627], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2024-01-26 20:57:10.750  INFO 8468 --- [-server-worker1] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x95516378, L:/127.0.0.1:56627 - R:/127.0.0.1:56628] connected
-2024-01-26 20:57:10.797  INFO 8468 --- [127.0.0.1:56627] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1}] to 127.0.0.1:56627
-2024-01-26 20:57:10.798  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:10.798  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:10.799  INFO 8468 --- [127.0.0.1:56627] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:56627, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 0]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1101800}
-2024-01-26 20:57:10.802  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:10.802  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:11.078  INFO 8468 --- [-server-worker2] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x1b4909ec, L:/127.0.0.1:56627 - R:/127.0.0.1:56629] connected
-2024-01-26 20:57:11.083  INFO 8468 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2}] to 127.0.0.1:56627
-2024-01-26 20:57:11.103  INFO 8468 --- [-server-worker2] d.b.mongo.backend.AbstractMongoBackend   : created database test
-2024-01-26 20:57:11.110  INFO 8468 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection employee
-2024-01-26 20:57:11.111  INFO 8468 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.employee
-2024-01-26 20:57:11.315  INFO 8468 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-26 20:57:11.485  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:11.485  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:11.506  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:11.507  WARN 8468 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
-2024-01-26 20:57:11.592  INFO 8468 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56630 (http) with context path ''
-2024-01-26 20:57:11.594  INFO 8468 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Started ChallengeApplicationTests in 2.723 seconds (JVM running for 3.789)
-2024-01-26 20:57:12.029  INFO 8468 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-26 20:57:12.029  INFO 8468 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-26 20:57:12.047  INFO 8468 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2024-01-26 20:57:12.074 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.c.ReportingStructureController     : Received reporting structure create request for [com.mindex.challenge.data.Employee@b3293e0]
-2024-01-26 20:57:12.074 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@b3293e0]
-2024-01-26 20:57:12.076 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@641cdb8d]
-2024-01-26 20:57:12.078 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@7baef97d]
-2024-01-26 20:57:12.079 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@54f564e6]
-2024-01-26 20:57:12.080 DEBUG 8468 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@4dc1b2c8]
+2024-01-31 21:34:23.520  INFO 6808 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Starting ChallengeApplicationTests on Anodyne with PID 6808 (started by noahm in C:\Users\noahm\OneDrive\Desktop\Programming\mindex-java-code-challenge)
+2024-01-31 21:34:23.522 DEBUG 6808 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2024-01-31 21:34:23.523  INFO 6808 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : No active profile set, falling back to default profiles: default
+2024-01-31 21:34:24.405  INFO 6808 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-31 21:34:24.506  INFO 6808 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 2 repository interfaces.
+2024-01-31 21:34:25.884  INFO 6808 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-01-31 21:34:25.909  INFO 6808 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31 21:34:25.910  INFO 6808 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-01-31 21:34:26.165  INFO 6808 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31 21:34:26.166  INFO 6808 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2602 ms
+2024-01-31 21:34:27.796  INFO 6808 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 61098, ssl: false)
+2024-01-31 21:34:27.958  INFO 6808 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:61098], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-01-31 21:34:28.076  INFO 6808 --- [-server-worker1] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0xfcff8fc1, L:/127.0.0.1:61098 - R:/127.0.0.1:61099] connected
+2024-01-31 21:34:28.189  INFO 6808 --- [127.0.0.1:61098] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1}] to 127.0.0.1:61098
+2024-01-31 21:34:28.196  INFO 6808 --- [127.0.0.1:61098] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:61098, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 0]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=3294900}
+2024-01-31 21:34:28.196  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:28.197  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:28.206  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:28.207  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:29.047  INFO 6808 --- [-server-worker2] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0xe48129fc, L:/127.0.0.1:61098 - R:/127.0.0.1:61102] connected
+2024-01-31 21:34:29.059  INFO 6808 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2}] to 127.0.0.1:61098
+2024-01-31 21:34:29.101  INFO 6808 --- [-server-worker2] d.b.mongo.backend.AbstractMongoBackend   : created database test
+2024-01-31 21:34:29.122  INFO 6808 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection employee
+2024-01-31 21:34:29.125  INFO 6808 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.employee
+2024-01-31 21:34:29.639  INFO 6808 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-31 21:34:30.031  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:30.035  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:30.083  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:30.084  WARN 6808 --- [    Test worker] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2024-01-31 21:34:30.294  INFO 6808 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61103 (http) with context path ''
+2024-01-31 21:34:30.302  INFO 6808 --- [    Test worker] c.m.challenge.ChallengeApplicationTests  : Started ChallengeApplicationTests in 7.334 seconds (JVM running for 9.977)
+2024-01-31 21:34:31.421  INFO 6808 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-31 21:34:31.422  INFO 6808 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-31 21:34:31.471  INFO 6808 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
+2024-01-31 21:34:31.544 DEBUG 6808 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received compensation create request for [Compensation ID: null
+Employee ID: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee Name: Paul McCartney
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.545 DEBUG 6808 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [Compensation ID: null
+Employee ID: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee Name: Paul McCartney
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.557  INFO 6808 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection compensation
+2024-01-31 21:34:31.558  INFO 6808 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.compensation
+2024-01-31 21:34:31.598 DEBUG 6808 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received compensation create request for [Compensation ID: null
+Employee ID: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee Name: Paul McCartney
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.606 DEBUG 6808 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [Compensation ID: null
+Employee ID: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee Name: Paul McCartney
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.623 DEBUG 6808 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received compensation create request for id [b7839309-3348-463b-a7e3-5de1c168beb3]
+2024-01-31 21:34:31.624 DEBUG 6808 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating compensation with id [b7839309-3348-463b-a7e3-5de1c168beb3]
+2024-01-31 21:34:31.681 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.c.ReportingStructureController     : Received reporting structure create request for [com.mindex.challenge.data.Employee@44e557da]
+2024-01-31 21:34:31.681 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@44e557da]
+2024-01-31 21:34:31.684 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@5949eab3]
+2024-01-31 21:34:31.687 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@3cad650c]
+2024-01-31 21:34:31.688 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@8c47985]
+2024-01-31 21:34:31.691 DEBUG 6808 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating reporting structure for employee [com.mindex.challenge.data.Employee@66f1a4c0]
+2024-01-31 21:34:31.711 DEBUG 6808 --- [o-auto-1-exec-5] c.m.c.controller.EmployeeController      : Received compensation create request for [Compensation ID: null
+Employee ID: 16a596ae-edd3-4847-99fe-c4518e82c86f
+Employee Name: John Lennon
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.711 DEBUG 6808 --- [o-auto-1-exec-5] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [Compensation ID: null
+Employee ID: 16a596ae-edd3-4847-99fe-c4518e82c86f
+Employee Name: John Lennon
+Salary: 250000.0
+Effective Date: Wed Jan 31 21:34:31 EST 2024]
+2024-01-31 21:34:31.723 DEBUG 6808 --- [o-auto-1-exec-6] c.m.c.controller.EmployeeController      : Received compensation create request for id [16a596ae-edd3-4847-99fe-c4518e82c86f]
+2024-01-31 21:34:31.723 DEBUG 6808 --- [o-auto-1-exec-6] c.m.c.service.impl.EmployeeServiceImpl   : Creating compensation with id [16a596ae-edd3-4847-99fe-c4518e82c86f]
 </pre>
 </span>
 </div>
@@ -178,7 +224,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at Jan 26, 2024, 8:57:12 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at Jan 31, 2024, 9:34:32 PM</p>
 </div>
 </div>
 </body>

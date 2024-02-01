@@ -28,8 +28,8 @@ public class ReportingStructure {
     }
 
     public String toString() {
-        return "Name: " + employee.getFirstName() + " " + employee.getLastName() + "\n"
-                + "Direct Reports: " + employee.getDirectReports() + "\n"
-                + "Calculated Reports: " + numberOfReports;
+        return "Name: " + this.getEmployee().getFirstName() + " " + this.getEmployee().getLastName() + "\n"
+                + "Employee's Direct Reports: " + this.getEmployee().getDirectReports() + "\n"
+                + "Calculated Reports: " + this.getNumberOfReports();
     }
 }
